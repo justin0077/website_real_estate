@@ -1,1 +1,19 @@
 /*=============== TYPOGRAPHY ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");\
+
+.section {
+    &__title {
+        font-size: var(--h2-font-size);
+        margin-bottom: 1rem;
+
+        span {
+            color: var(--second-color);
+        }
+    }
+
+    &__subtitle {
+        display: block;
+        font-size: var(--small-font-size);
+        color: var(--second-color);
+    }
+}
