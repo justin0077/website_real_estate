@@ -147,6 +147,37 @@ button {
 .swiper-button-next {
   right: calc(50% - 3rem); }
 
+/*=============== SCROLLBAR ===============*/
+::webkit-scrollbar {
+  width: .6rem;
+  border-radius: .5rem;
+  background-color: #bdbfc7; }
+  ::webkit-scrollbar-thumb {
+    background-color: #9c9fab;
+    border-radius: .5rem; }
+    ::webkit-scrollbar-thumb:hover {
+      background-color: #808493; }
+
+/*=============== SCROLLUP ===============*/
+.scrollup {
+  position: fixed;
+  right: 1rem;
+  bottom: -30%;
+  background-color: var(--container-color);
+  box-shadow: 0 8px 12px rgba(39, 69, 190, 0.1);
+  display: inline-flex;
+  padding: .35rem;
+  color: var(--title-color);
+  border-radius: .25rem;
+  font-size: 1.25rem;
+  z-index: var(--z-tooltip);
+  transition: .3s; }
+  .scrollup:hover {
+    transform: translateY(-0.25rem);
+    color: var(--first-color); }
+  .scrollup.show-scroll {
+    bottom: 8rem; }
+
 /*=============== IMPORT LAYOUTS SCSS DIRECTORY ===============*/
 /*=============== HEADER and NAV ===============*/
 .header {
@@ -186,6 +217,10 @@ button {
         padding: 1.3rem 3rem;
         border-radius: 1.25rem;
         transition: .4s; } }
+    .header .nav__menu .active-link {
+      background: linear-gradient(101deg, #3858d6, #2948c7);
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(39, 69, 190, 0.25); }
     @media screen and (max-width: 1023px) {
       .header .nav__list {
         display: flex;
@@ -277,6 +312,15 @@ button {
 .footer__privacy {
   justify-content: center;
   column-gap: 1.25rem; }
+
+/*=============== THEME BUTTON ===============*/
+.change-theme {
+  font-size: 1.25rem;
+  color: #fff;
+  cursor: pointer;
+  transition: .3s; }
+  .change-theme:hover {
+    color: var(--first-color); }
 
 /*=============== IMPORT PAGES SCSS DIRECTORY ===============*/
 /*=============== HOME ===============*/

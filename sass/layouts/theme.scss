@@ -1,0 +1,11 @@
+/*=============== THEME BUTTON ===============*/
+.change-theme {
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+
+    &:hover {
+        color: var(--first-color);
+    }
+}

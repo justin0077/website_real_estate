@@ -11,11 +11,14 @@
 
 @import 'components/button';
 @import 'components/swiper';
+@import 'components/scrollbar';
+@import 'components/scrollup';
 
 /*=============== IMPORT LAYOUTS SCSS DIRECTORY ===============*/
 
 @import 'layouts/header';
 @import 'layouts/footer';
+@import 'layouts/theme';
 
 /*=============== IMPORT PAGES SCSS DIRECTORY ===============*/
 
