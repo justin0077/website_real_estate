@@ -1,0 +1,121 @@
+/*=============== THEME BUTTON ===============*/
+.change-theme {
+    font-size: 1.25rem;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+
+    @media screen and (min-width: 1023px) {
+        margin: 0 3rem;
+        color: var(--text-color-light);
+    }
+
+    &:hover {
+        color: var(--first-color);
+    }
+}
+
+.dark-theme {
+    .home { 
+        &__search {
+            border: 3px solid var(--border-color);
+        }
+
+        &__img {
+            box-shadow: none;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        border: 3px solid var(--border-color);
+    }
+
+    .popular {
+        &__card {
+            &:hover {
+                box-shadow: none;
+            }
+        }
+    }
+
+    .value {
+        &__img {
+            box-shadow: none;
+        }
+
+        &__orbe {
+            background-color: var(--container-color);
+        }
+
+        &__accordion {
+            &-icon, &-arrow {
+                background-color: var(--container-color);
+            }
+        }
+    }
+
+    .accordion {
+        &-open {
+            box-shadow: none;
+
+            .value {
+                &__accordion {
+                    &-icon {
+                        box-shadow: none;
+                    }
+
+                    &-arrow {
+                        box-shadow: none;
+                    }
+                }              
+            }
+        }
+    }
+
+    .contact {
+        &__orbe {
+            background-color: var(--container-color);
+        }
+
+        &__img {
+            box-shadow: none;
+        }
+
+        &__card {
+            i {
+                background-color: var(--container-color);
+            }
+            &-box {
+                &:hover {
+                    box-shadow: none;
+                }
+            }
+
+            &-button {
+                background-color: var(--container-color);
+            }
+        }
+    }
+
+    .subscribe {
+        &__container {
+            background-color: var(--container-color);
+            border: 6px solid var(--border-color);
+        }
+
+        &__description {
+            color: var(--text-color);
+        }
+    }
+
+    .scrollup {
+        box-shadow: none;
+    }
+
+    .nav {
+        &__menu {
+            box-shadow: none;
+        }
+    }
+}

@@ -19,5 +19,10 @@
 .nav {
     &__button {
         display: none;
+
+        @media screen and (min-width: 1023px) {
+            display: inline-block;
+        }
+
     }
 }

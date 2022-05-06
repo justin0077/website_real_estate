@@ -2,6 +2,11 @@
 .footer {
     &__container {
         row-gap: 2.5rem;
+
+        @media screen and (min-width: 767px) {
+            grid-template-columns: repeat(2, max-content);
+            justify-content: space-between;
+        }
     }
 
     &__logo {
@@ -32,15 +37,35 @@
     &__content {
         grid-template-columns: repeat(2, max-content);
         gap: 2.5rem 4rem;
+
+        @media screen and (max-width: 320px) {
+            gap: 2rem;
+        }
+
+        @media screen and (min-width: 576px) {
+           grid-template-columns: repeat(3, max-content);
+        }  
+
+        @media screen and (min-width: 1023px) {
+               grid-template-columns: repeat(4, max-content);
+        }
     }
 
     &__title {
         font-size: var(--h3-font-size);
         margin-bottom: 1rem;
+
+        @media screen and (min-width: 1023px) {
+            margin-bottom: 1.5rem;   
+        }
     }
 
     &__links {
         row-gap: .5rem;
+
+        @media screen and (min-width: 1023px) {
+            row-gap: 1rem;   
+        }
     }
 
     &__link {
@@ -78,6 +103,12 @@
         flex-direction: column;
         text-align: center;
         row-gap: 1.5rem;
+
+        @media screen and (min-width: 1023px) {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-bottom: 2rem;   
+        }
     }
 
     &__copy,
